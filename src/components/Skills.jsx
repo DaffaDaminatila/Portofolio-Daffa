@@ -11,6 +11,15 @@ const Skills = () => {
         ? SKILLS
         : SKILLS.filter(skill => skill.level === filter);
 
+    const getSkillPercentage = (level) => {
+        switch (level?.toLowerCase()) {
+            case 'advanced': return 90;
+            case 'intermediate': return 60;
+            case 'beginner': return 30;
+            default: return 50;
+        }
+    };
+
     return (
         <section id="skills" className="py-5 position-relative">
             <Container className="py-5">
@@ -37,34 +46,37 @@ const Skills = () => {
                 </div>
 
                 <Row className="g-4 justify-content-center">
-                    {filteredSkills.map((skill, index) => (
-                        <Col key={skill.name} lg={3} md={4} sm={6} data-aos="fade-up" data-aos-delay={index * 50}>
-                            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} glareEnable={true} glareMaxOpacity={0.15} scale={1.02} className="h-100">
-                                <div className="glass-card p-4 h-100 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden group-hover-glow">
-                                    {/* Icon Background Glow */}
-                                    <div className="position-absolute top-50 start-50 translate-middle"
-                                        style={{ width: '80px', height: '80px', background: 'radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%)', filter: 'blur(20px)', zIndex: 0 }}>
-                                    </div>
+                    {filteredSkills.map((skill, index) => {
+                        const autoPercentage = getSkillPercentage(skill.level);
 
-                                    <div className="mb-3 position-relative" style={{ zIndex: 1 }}>
-                                        <div className="rounded-circle d-flex align-items-center justify-content-center bg-dark border border-secondary" style={{ width: '60px', height: '60px' }}>
-                                            <i className={`bi ${skill.icon} fs-3`} style={{ color: 'var(--accent-purple)' }}></i>
+                        return (
+                            <Col key={skill.name} lg={3} md={4} sm={6} data-aos="fade-up" data-aos-delay={index * 50}>
+                                <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} glareEnable={true} glareMaxOpacity={0.15} scale={1.02} className="h-100">
+                                    <div className="glass-card p-4 h-100 d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden group-hover-glow">
+                                        {/* Icon Background Glow */}
+                                        <div className="position-absolute top-50 start-50 translate-middle"
+                                            style={{ width: '80px', height: '80px', background: 'radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%)', filter: 'blur(20px)', zIndex: 0 }}>
                                         </div>
-                                    </div>
 
-                                    <h4 className="h6 fw-bold mb-3">{skill.name}</h4>
-
-                                    <div className="w-100 mt-auto">
-                                        <div className="d-flex justify-content-between mb-1 small text-secondary">
-                                            <span>{skill.level}</span>
-                                            <span>{skill.percentage}%</span>
+                                        <div className="mb-3 position-relative" style={{ zIndex: 1 }}>
+                                            <div className="rounded-circle d-flex align-items-center justify-content-center bg-dark border border-secondary" style={{ width: '60px', height: '60px' }}>
+                                                <i className={`bi ${skill.icon} fs-3`} style={{ color: 'var(--accent-purple)' }}></i>
+                                            </div>
                                         </div>
-                                        <ProgressBar
-                                            now={skill.percentage}
-                                            variant="custom"
-                                            style={{ height: '6px', backgroundColor: 'rgba(255,255,255,0.05)' }}
-                                        />
-                                        <style>{`
+
+                                        <h4 className="h6 fw-bold mb-3">{skill.name}</h4>
+
+                                        <div className="w-100 mt-auto">
+                                            <div className="d-flex justify-content-between mb-1 small text-secondary">
+                                                <span>{skill.level}</span>
+                                                <span>{autoPercentage}%</span>
+                                            </div>
+                                            <ProgressBar
+                                                now={autoPercentage}
+                                                variant="custom"
+                                                style={{ height: '6px', backgroundColor: 'rgba(255,255,255,0.05)' }}
+                                            />
+                                            <style>{`
                                             .progress-bar-custom {
                                                 background: var(--accent-purple);
                                                 position: relative;
@@ -75,11 +87,12 @@ const Skills = () => {
                                                 box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
                                             }
                                         `}</style>
+                                        </div>
                                     </div>
-                                </div>
-                            </Tilt>
-                        </Col>
-                    ))}
+                                </Tilt>
+                            </Col>
+                        );
+                    })}
                 </Row>
             </Container>
         </section>
