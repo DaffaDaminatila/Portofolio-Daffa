@@ -1,0 +1,28 @@
+.mouse-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(79, 156, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 20px 5px rgba(79, 156, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+    mix-blend-mode: screen;
+}
+
+.mouse-follower.hovering {
+    width: 50px;
+    height: 50px;
+    background: rgba(179, 107, 255, 0.2);
+    border-color: rgba(179, 107, 255, 0.8);
+    box-shadow: 0 0 30px 10px rgba(179, 107, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .mouse-follower {
+        display: none;
+    }
+}
