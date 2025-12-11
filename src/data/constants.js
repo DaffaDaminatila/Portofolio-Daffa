@@ -19,7 +19,7 @@ export const PROJECTS = [
         demoLink: "#",
         repoLink: "#"
     },
-    {
+    /*{
         id: 3,
         title: "Crypto Wallet API",
         category: "API",
@@ -28,7 +28,7 @@ export const PROJECTS = [
         tech: ["Node.js", "Express", "MongoDB"],
         demoLink: "#",
         repoLink: "#"
-    }
+    }*/
 ];
 
 export const SKILLS = [
