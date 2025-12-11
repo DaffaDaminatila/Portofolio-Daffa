@@ -10,6 +10,7 @@ import DesignPortfolio from './components/DesignPortfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MouseFollower from './components/MouseFollower';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <BackgroundAnimation />
       <MouseFollower />
       <NavBar />
       <Hero />

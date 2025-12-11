@@ -32,13 +32,19 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-    { name: "React", level: "Intermadiate", icon: "bi-filetype-jsx" },
-    { name: "JavaScript", level: "Intermadiate", icon: "bi-filetype-js" },
-    { name: "Bootstrap 5", level: "Intermediate", icon: "bi-bootstrap" },
-    { name: "Node.js", level: "Intermediate", icon: "bi-server" },
-    { name: "Figma", level: "Advanced", icon: "bi-bezier2" },
+    { name: "HTML5/CSS3", percentage: 95, level: "Advanced", icon: "bi-filetype-html" },
+    { name: "JavaScript", percentage: 90, level: "Advanced", icon: "bi-filetype-js" },
+    { name: "React/Redux", percentage: 95, level: "Advanced", icon: "bi-filetype-jsx" },
+    { name: "Tailwind CSS", percentage: 91, level: "Advanced", icon: "bi-wind" },
+    { name: "Bootstrap", percentage: 91, level: "Advanced", icon: "bi-bootstrap" },
+    { name: "Next.js", percentage: 85, level: "Intermediate", icon: "bi-filetype-key" },
+    { name: "UI/UX Design", percentage: 87, level: "Advanced", icon: "bi-palette" },
+    { name: "Node.js/Express", percentage: 87, level: "Intermediate", icon: "bi-server" },
+    { name: "MongoDB", percentage: 80, level: "Intermediate", icon: "bi-database" },
+    { name: "PostgreSQL", percentage: 80, level: "Intermediate", icon: "bi-database-fill" },
+    { name: "Git", percentage: 85, level: "Intermediate", icon: "bi-git" },
+    { name: "GitHub", percentage: 90, level: "Advanced", icon: "bi-github" }
 ];
-
 export const SOCIAL_LINKS = {
     github: "https://github.com/DaffaDaminatila",
     linkedin: "https://linkedin.com/in/muhammad-daffa-daminatila",
