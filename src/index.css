@@ -180,8 +180,28 @@ h6 {
   transition: all 0.2s ease;
 }
 
+
 .btn-outline-custom:hover {
   background: rgba(79, 156, 255, 0.1);
   box-shadow: 0 0 20px rgba(79, 156, 255, 0.2);
   color: var(--accent-blue);
+}
+
+/* Swiper Customization */
+.swiper-pagination-bullet {
+  background-color: var(--text-secondary);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-blue);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.projects-swiper,
+.design-swiper {
+  padding-bottom: 3rem !important;
+  /* Space for pagination */
 }
