@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Badge } from 'react-bootstrap';
-// import avatarImg from 'src/assets/image/daffa.jpg';
+import avatarImg from '../assets/image/daffa.jpg';
 
 const Hero = () => {
     return (
@@ -58,7 +58,7 @@ const Hero = () => {
                     <Col lg={5} className="text-center position-relative" data-aos="fade-left" data-aos-delay="200">
                         <div className="glass-card p-4 d-inline-block floating" style={{ animationDuration: '8s' }}>
                             <img
-                                src='../assets/image/daffa.jpg'
+                                src={avatarImg}
                                 alt="Profile"
                                 className="img-fluid rounded-circle border border-2 border-secondary"
                                 style={{ maxWidth: '300px', boxShadow: '0 0 30px rgba(79,156,255,0.2)' }}
