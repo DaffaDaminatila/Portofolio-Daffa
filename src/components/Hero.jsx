@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Badge } from 'react-bootstrap';
-import avatarImg from '../assets/image/daffa.JPG';
+import avatarImg from '../assets/image/daffa.jpg';
 
 const Hero = () => {
     return (
