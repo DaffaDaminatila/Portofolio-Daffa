@@ -1,9 +1,12 @@
+
+import pokkefunImg from '../assets/image/pokkefun.png';
+
 export const PROJECTS = [
     {
         id: 1,
         title: "E-Commerce Dashboard",
         category: "Web App",
-        image: "https://placehold.co/600x400/1a1d2d/FFF?text=Dashboard",
+        image: "https://placehold.co/600x400/1a1d2d/FFF?text=Landing+Page",
         description: "A comprehensive analytics dashboard for online retailers with real-time data visualization.",
         tech: ["React", "Bootstrap", "Chart.js"],
         demoLink: "#",
@@ -13,11 +16,11 @@ export const PROJECTS = [
         id: 2,
         title: "SaaS Landing Page",
         category: "Landing Page",
-        image: "https://placehold.co/600x400/1a1d2d/FFF?text=Landing+Page",
+        image: pokkefunImg,
         description: "High-converting landing page for a modern SaaS platform with scroll animations.",
-        tech: ["React", "Framer Motion", "Vite"],
-        demoLink: "#",
-        repoLink: "#"
+        tech: ["vue", "Vite"],
+        demoLink: "https://daffadaminatila.github.io/pokkefun/",
+        repoLink: "https://github.com/DaffaDaminatila/pokkefun/"
     },
     /*{
         id: 3,
