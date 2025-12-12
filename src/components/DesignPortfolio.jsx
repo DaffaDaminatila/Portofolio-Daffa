@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import finalImg from '../assets/image/final.png';
 import balendaImg from '../assets/image/balenda.png';
 import mobileImg from '../assets/image/mobile.png';
+import divingImg from '../assets/image/diving.png';
 
 const DesignPortfolio = () => {
     const [hoveredId, setHoveredId] = useState(null);
@@ -18,7 +19,8 @@ const DesignPortfolio = () => {
     const designs = [
         { id: 1, title: 'Part Computer', type: 'Mobile App', img: mobileImg },
         { id: 2, title: 'Fashion Store', type: 'Web Design', img: balendaImg },
-        { id: 3, title: 'Travel', type: 'Poster', img: finalImg },
+        { id: 3, title: 'Diving', type: 'Web Design', img: divingImg },
+        { id: 4, title: 'Travel', type: 'Poster', img: finalImg },
     ];
 
     return (
