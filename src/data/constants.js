@@ -14,7 +14,7 @@ export const PROJECTS = [
     },
     {
         id: 2,
-        title: "SaaS Landing Page",
+        title: "Pokkefun Landing Page",
         category: "Landing Page",
         image: pokkefunImg,
         description: "High-converting landing page for a modern SaaS platform with scroll animations.",
