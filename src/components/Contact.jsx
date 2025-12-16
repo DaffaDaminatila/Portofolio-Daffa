@@ -45,9 +45,9 @@ const Contact = () => {
                                     <Button variant="primary" type="submit" className="btn-primary-custom w-100 py-3">
                                         Send Message to {SOCIAL_LINKS.email}
                                     </Button>
-                                    <div className="mt-3 text-secondary small">
+                                    {/* <div className="mt-3 text-secondary small">
                                         Or email me directly at: <a href={`mailto:${SOCIAL_LINKS.email}`} className="text-info">{SOCIAL_LINKS.email}</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Form>
                         </div>
