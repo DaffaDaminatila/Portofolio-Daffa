@@ -11,6 +11,7 @@ import finalImg from '../assets/image/final.png';
 import balendaImg from '../assets/image/balenda.png';
 import mobileImg from '../assets/image/mobile.png';
 import divingImg from '../assets/image/diving.png';
+import floridinaImg from '../assets/image/floridina.png';
 
 const DesignPortfolio = () => {
     const [hoveredId, setHoveredId] = useState(null);
@@ -21,6 +22,7 @@ const DesignPortfolio = () => {
         { id: 2, title: 'Fashion Store', type: 'Web Design', img: balendaImg },
         { id: 3, title: 'Diving', type: 'Web Design', img: divingImg },
         { id: 4, title: 'Travel', type: 'Poster', img: finalImg },
+         { id: 5, title: 'Floridina', type: 'Poster Komersil', img: floridinaImg },
     ];
 
     return (
