@@ -81,7 +81,7 @@ const Projects = () => {
                                             </div>
                                             <div className="d-flex gap-3 mt-auto">
                                                 <a href={project.demoLink} className="text-white text-decoration-none small"><i className="bi bi-eye me-1"></i> Live Demo</a>
-                                                <a href={project.repoLink} className="text-white text-decoration-none small"><i className="bi bi-github me-1"></i> Source Code</a>
+                                                {/* <a href={project.repoLink} className="text-white text-decoration-none small"><i className="bi bi-github me-1"></i> Source Code</a> */}
                                             </div>
                                         </Card.Body>
                                     </Card>

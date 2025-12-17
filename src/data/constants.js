@@ -1,16 +1,17 @@
 
 import pokkefunImg from '../assets/image/pokkefun.png';
+import catatindImg from '../assets/image/catatin.png';
 
 export const PROJECTS = [
     {
         id: 1,
-        title: "E-Commerce Dashboard",
+        title: "Catatin",
         category: "Web App",
-        image: "https://placehold.co/600x400/1a1d2d/FFF?text=Landing+Page",
-        description: "A comprehensive analytics dashboard for online retailers with real-time data visualization.",
-        tech: ["React", "Bootstrap", "Chart.js"],
-        demoLink: "#",
-        repoLink: "#"
+        image: catatindImg,
+        description: "aplikasi manajemen tugas berbasis web yang membantu pengguna mengatur, memantau, dan menyelesaikan pekerjaan harian secara lebih terstruktur",
+        tech: ["javascript", "html", "css"],
+        demoLink: "https://daffadaminatila.github.io/Catatin/",
+        // repoLink: "#"
     },
     {
         id: 2,
@@ -20,7 +21,7 @@ export const PROJECTS = [
         description: "High-converting landing page for a modern SaaS platform with scroll animations.",
         tech: ["vue", "Vite"],
         demoLink: "https://daffadaminatila.github.io/pokkefun/",
-        repoLink: "https://github.com/DaffaDaminatila/pokkefun/"
+        // repoLink: "https://github.com/DaffaDaminatila/pokkefun/"
     },
     /*{
         id: 3,
